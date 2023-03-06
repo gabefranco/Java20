@@ -166,8 +166,31 @@ console.log(hello('Olá Mundo do Gabe 2')) // mesmo função de cima sem o uso d
 // Aqui sempre se trabalha com COLCHETES [] e nos objetos com CHAVES {}.
 // Um array funciona como se fosse um mini banco de dados dentro de uma variavel. TOP né.
 
+//const listMerc = ["berinjela", "abobrinha", "tomate", "cebola"];
+
+//console.log(listMerc) // para listar todos os itens dentro da matriz.
+
+//console.log(listMerc.length) // para saber quantos itens existem dentro da matriz.
+
+//console.log(listMerc[listMerc.length -1]) // Esse comando irá retornar o "ultimo" item da matriz
+
+//listMerc.push("Rucula"); // Esse comando acrescenta 1 item na matriz
+
+//listMerc[10] = "Acelga"; // Adicionei um item na matriz na posição 10, porém ela tinha apenas 4 itens (até a 3 posição), por isso ela
+// criou 6 itens vazios
+
+//console.log(Array.isArray(listMerc)); // Esse comando verifica se a "variavel" é uma matriz mesmo
+
+//***************** METODOS DE ARRAY ************************/
+
 const listMerc = ["berinjela", "abobrinha", "tomate", "cebola"];
 
-console.log(listMerc) // para listar todos os itens dentro da matriz.
+//console.log(listMerc.join(" * ")); // dessa forma podemos acrescentar qlq coisa entre os itens da matriz, ficando assim: "berinjela * abobrinha * tomate * cebola"
 
-console.log(listMerc.length) // para saber quantos itens existem dentro da matriz.
+//listMerc.pop(); // esse comando "pop" remove o ultimo item da matriz.
+//listMerc.shift(); // esse comando "shift" remove o primeiro item da matriz.
+//listMerc.push("Gabe"); // esse comando "push" adiciona um item depois do ultimo ligar na matriz.
+//listMerc.unshift("Gabe"); // Esse comando"unShift", adiciona um item antes do primeiro item na matriz.
+listMerc.splice(3,0,"Manga", "Abacate", "Alho") // Esse é top. rs. Esse comando permite add um item em uma posição especifica. "3" é a posição, "0" é a qtde de itens a serem deletados ou zero pra não deletar nada, e declara os itens a serem add.
+
+console.log(listMerc);
