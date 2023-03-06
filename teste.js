@@ -183,7 +183,7 @@ console.log(hello('Olá Mundo do Gabe 2')) // mesmo função de cima sem o uso d
 
 //***************** METODOS DE ARRAY ************************/
 
-const listMerc = ["berinjela", "abobrinha", "tomate", "cebola"];
+//const listMerc = ["berinjela", "abobrinha", "tomate", "cebola"];
 
 //console.log(listMerc.join(" * ")); // dessa forma podemos acrescentar qlq coisa entre os itens da matriz, ficando assim: "berinjela * abobrinha * tomate * cebola"
 
@@ -191,6 +191,36 @@ const listMerc = ["berinjela", "abobrinha", "tomate", "cebola"];
 //listMerc.shift(); // esse comando "shift" remove o primeiro item da matriz.
 //listMerc.push("Gabe"); // esse comando "push" adiciona um item depois do ultimo ligar na matriz.
 //listMerc.unshift("Gabe"); // Esse comando"unShift", adiciona um item antes do primeiro item na matriz.
-listMerc.splice(3,0,"Manga", "Abacate", "Alho") // Esse é top. rs. Esse comando permite add um item em uma posição especifica. "3" é a posição, "0" é a qtde de itens a serem deletados ou zero pra não deletar nada, e declara os itens a serem add.
+//listMerc.splice(3,0,"Manga", "Abacate", "Alho") // Esse é top. rs. Esse comando permite add um item em uma posição especifica. "3" é a posição, "0" é a qtde de itens a serem deletados ou zero pra não deletar nada, e declara os itens a serem add.
 
-console.log(listMerc);
+//console.log(listMerc);
+
+// **** Fazendo uma junção de várias Matrizes usando "concat".
+
+/* const lista1 = ["Manga", "Maça", "Limão", "Morango"];
+const lista2 = ["Sabão", "Detergente", "Amaciante"];
+
+const listaCompleta = lista1.concat(lista2);
+
+console.log(listaCompleta); */
+
+// ++++++ Usando o Slice para fatiar uma matriz // vc pode determinar a partir da posição a ser mostrada ou de uma posição até outra.
+// lembrando que a posição final indica a posição anterior a ela., ex.: (3,6) o 3 é inicial, o 6 é a ultima, e vai retornar até a 5.
+
+/* const futebol = ["dogador1", "hogador2", "aogador3", "jogador4", "gogador5", "togador6", "xogador7", "zogador8", "logador9"];
+//const premios = futebol.slice(3, 6);
+//console.log(premios)
+
+// Colocar o resultado acima em ordem alfabetica. Isso serve para "texto"
+
+/* const ordemAlf = futebol.sort(); // ordem alfabetica crescente
+futebol.reverse(); // ordem alfabetica decrescente
+console.log(ordemAlf); // primeiro vc coloca em ordem alfabetica crescente para depois colocar em ordem alfabetica descrescente; */
+
+// se estiver usando numeros, pode-se usar o mesmo comando, porém precisa criar uma função a,b, onde ele compara a dois numeros
+// se são maiores ou menores e ai pede para retornar isso, de forma que eles estejam em ordem numerica.
+// exemplo:
+
+//const numeros = ["7", "100", "58", "85", "41", "19", "23", "74", "11"];
+//console.log(numeros.sort()); // dessa forma ele coloca em ordem alfabetica ()
+//console.log(numeros.sort(function (a, b) { return (a-b)})); 
